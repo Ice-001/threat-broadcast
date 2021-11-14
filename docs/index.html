@@ -1,4 +1,4 @@
-<!-- RELEASE TIME : 2021-11-14 09:30:48 -->
+<!-- RELEASE TIME : 2021-11-14 18:35:02 -->
 <html lang="zh-cn">
 
  <head>
@@ -253,6 +253,13 @@
        <th width="5%">URL</th>
       </tr>
       <tr>
+       <td>0539cf32c31a09af5437dd29ef3b38b0</td>
+       <td>CVE-2021-43617</td>
+       <td>2021-11-14 16:15:00 <img src="imgs/new.gif" /></td>
+       <td>Laravel Framework through 8.70.2 does not sufficiently block the upload of executable PHP content because Illuminate/Validation/Concerns/ValidatesAttributes.php lacks a check for .phar files, which are handled as application/x-httpd-php on systems based on Debian. In some use cases, this may be related to file-type validation for image upload (e.g., differences between getClientOriginalExtension and other approaches).</td>
+       <td><a href="https://www.tenable.com/cve/CVE-2021-43617">详情</a></td>
+      </tr>
+      <tr>
        <td>beb29bd2061217514c31a77fb06bb678</td>
        <td>CVE-2021-43616</td>
        <td>2021-11-13 18:15:00 <img src="imgs/new.gif" /></td>
@@ -454,13 +461,6 @@
        <td>2021-11-11 22:15:00</td>
        <td>OctoRPKI tries to load the entire contents of a repository in memory, and in the case of a GZIP bomb, unzip it in memory, making it possible to create a repository that makes OctoRPKI run out of memory (and thus crash).</td>
        <td><a href="https://www.tenable.com/cve/CVE-2021-3912">详情</a></td>
-      </tr>
-      <tr>
-       <td>bc7859230dd82350c4517590cbf187ea</td>
-       <td>CVE-2021-3911</td>
-       <td>2021-11-11 22:15:00</td>
-       <td>If the ROA that a repository returns contains too many bits for the IP address then OctoRPKI will crash.</td>
-       <td><a href="https://www.tenable.com/cve/CVE-2021-3911">详情</a></td>
       </tr>
      </tbody>
     </table>
